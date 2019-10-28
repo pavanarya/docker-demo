@@ -1,0 +1,6 @@
+docker start <<containername>>
+docker attach <<containername>>
+
+or
+
+docker start -i <<containername>>

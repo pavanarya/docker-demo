@@ -1,0 +1,6 @@
+docker run -it ubuntu:latest
+
+--- Create a dir in container and exit
+
+docker ps
+

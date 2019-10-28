@@ -1,0 +1,6 @@
+docker login --username=yourhubusername --email=youremail@company.com
+
+docker tag <<oldimage>> <<username>>/<imagename>>:<<tag>>
+
+docker push <<Imagename>>/<<tag>>
+
