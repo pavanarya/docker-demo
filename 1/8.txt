@@ -1,0 +1,12 @@
+docker run -it --name pavannode node
+
+docker run -it -d --name pavannode2 -v C:/Pavan:/src -w /src node
+
+docker exec -it <container name> /bin/bash
+
+
+docker run --rm -v c:/Pavan:/data alpine ls /data
+
+docker rm -f $(docker ps -q)
+
+docker rm $(docker ps -a -q)

@@ -1,0 +1,7 @@
+docker run -it -d --name node  -v ${PWD}:/src -w /src nodedocker
+
+docker run -it -d --name node2  -v C:/Pavan/Personal/docker-demo/1:/src -w /src node
+
+ docker exec -it <<containername>> node app.js
+
+ docker run -it -d --name node2  -v C:/Pavan/Personal/docker-demo/1:/src -w /src -p 8085:8085 node
