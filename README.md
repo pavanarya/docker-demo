@@ -88,3 +88,16 @@ docker tag <<oldimagename>>:<<version>> <<dockerhub_username>>/<<newimagename>>:
 5. Login into someother machine and try to do `docker run -it <<dockerhub_username>>/<<newimagename>>:<<tag>>`
 6. Now you'll be able to see the folder created and vim installed in Step 5.
 
+
+#Step 6 - Mounting Volumes<br>
+Goal: Run a docker container, mount your current directory as a volumes see whether you are able to see your files on container <br><br>
+
+Exercises<br>
+`docker run -it --name pavan_ubuntu -v ${PWD}:/src -w /src ubuntu`
+
+#Step 7 - Port Binding<br>
+Goal: Run a node docker image, mount your current directory as a volumes , map ports for accessing http server running in container <br><br>
+
+Exercises<br>
+1. `docker run -it --name pavan_node -v ${PWD}:/src -w /src -p 8080:8085 node node app.js` <br>
+2. Browse the application using localhost:8080 on host machine
