@@ -7,7 +7,7 @@ services:
         image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
         environment:
           - ACCEPT_EULA=Y
-          - SA_PASSWORD=pavan@123
+          - SA_PASSWORD=Pavan@123
         networks: 
           db:
             aliases:

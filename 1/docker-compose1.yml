@@ -1,0 +1,9 @@
+version: "3.7"
+
+services: 
+  myweb-app:
+    ports: 
+      - "8080:8085"
+    build: 
+      context: ./
+      dockerfile: Dockerfile

@@ -1,9 +1,14 @@
 version: "3.7"
 
-services: 
-  myweb-app:
-    ports: 
-      - "8080:8085"
-    build: 
-      context: ./
-      dockerfile: Dockerfile
+services:
+  elasticsearch:
+    image: elasticsearch:6.8.4
+    ports:
+      - 9200:9200
+    volumes: 
+      - C:/Pavan/Personal/docker-demo/1:/usr/share/elasticsearch/logs:rw
+
+  kibana:
+    image: kibana:6.8.4
+    ports:
+      - 5601:5601
